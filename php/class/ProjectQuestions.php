@@ -13,9 +13,6 @@ class ProjectQuestions {
     private $required;
     private $sub_required;
 
-
-
-
     private $qsn_id = NULL;
     private $project_cat_id;
     private $admin_id;
@@ -23,11 +20,6 @@ class ProjectQuestions {
     private $question_cat_id;
 
 
-
-
-
-
-    //Construction
     public function __construct() {
         $this->db = new Dbconnection();
         $this->db = $this->db->dbCon();
@@ -35,7 +27,7 @@ class ProjectQuestions {
     
     // ====================== Admin ================================================================
     
-    //get questm
+    //get quistion
     public function get_project_questions($cat_id, $admin_id, $question_phs_id, $qsn_cat_id,  $questions ) {        
         $this->project_cat_id = $cat_id;      
         $this->admin_id = $admin_id;
